@@ -2,3 +2,15 @@
 @import '_reset';
 @import '_mixing';
 
+body {
+    font-family: $workSans;
+    font-size: 18px;
+    line-height: 23px;
+    color: $brown;
+}
+
+.container{
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+}

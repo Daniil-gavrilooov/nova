@@ -14,3 +14,11 @@ $(function(){
         nextArrow: '<img class="next__arrow" src="images/project_slider-nextArrow.svg" alt="">'
     });
   });
+
+$(function(){
+    $('.office__slider').slick({
+        slidesToShow: 1,
+        prevArrow: '<img class="prev__arrow" src="images/project_slider-prevArrow.svg" alt="">',
+        nextArrow: '<img class="next__arrow" src="images/project_slider-nextArrow.svg" alt="">'
+    });
+  });

@@ -2,6 +2,7 @@
 @import '_reset';
 @import '_mixing';
 @import '_header';
+@import '_about';
 
 body {
     font-family: $workSans;
@@ -10,7 +11,7 @@ body {
     color: $brown;
 }
 
-.additional__container{
+.additional__container {
     max-width: 1460px;
     padding: 0 10px;
     margin: 0 auto;
@@ -18,8 +19,51 @@ body {
 
 
 
-.container{
+.container {
     max-width: 1180px;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+.section__title {
+    font-family: $coda;
+    font-weight: 400;
+    font-size: 63px;
+    line-height: 83px;
+    color: $brown;
+    margin-bottom: 100px;
+}
+
+.section__btn {
+    padding: 38px;
+    background-color: $orange;
+    border-radius: 140px;
+    display: block;
+}
+
+.section__button {
+    position: relative;
+}
+
+.section__btn-text {
+    position: absolute;
+    content: '';
+    right: 17%;
+    top: 119%;
+    transform: rotate(-90deg);
+    font-size: 10px;
+    line-height: 20px;
+}
+
+@media (max-width: 700px) {
+    .section__btn{
+        padding: 6px;   
+    }
+    .section__btn-text{
+        display: none;
+    }
+    .section__title{
+        font-size: 50px;
+        line-height: 57px;
+    }
 }

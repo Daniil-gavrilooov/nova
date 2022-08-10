@@ -1,0 +1,31 @@
+.highlights {
+    padding-bottom: 90px;
+
+    &__content {
+        display: flex;
+        // flex-wrap: wrap;
+    }
+
+    &__item {
+        border: $border;
+        border-left: none;
+        padding: 38px 0;
+    }
+
+    &__item-num {
+        font-family: $coda;
+        font-weight: 400;
+        font-size: 31px;
+        line-height: 42px;
+        padding-left: 40px;
+        padding-bottom: 44px;
+    }
+
+    &__item-text{
+        max-width: 264px;
+        text-align: right;
+        float: right;
+        padding-right: 41px;
+        padding-top: 40px;
+    }
+}

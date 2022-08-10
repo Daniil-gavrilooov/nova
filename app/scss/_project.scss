@@ -1,0 +1,64 @@
+.project {
+    padding-bottom: 90px;
+
+    &__slider-item {
+        border-bottom: $border;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 1010px;
+            height: 1px;
+            bottom: 10.5%;
+            background-color: #DBD9D9;
+            z-index: 1;
+        }
+        & .section__btn-text{
+            top: 30%;
+            right: 12%;
+        }
+    }
+
+    .next__arrow,
+    .prev__arrow{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        cursor: pointer;
+    }
+    .next__arrow{
+        right: 0;
+
+    }
+
+    .prev__arrow{
+        z-index: 3;
+    }
+
+    &__slider-inner{
+        display: flex;
+    }
+
+    &__slider-info {
+        display: flex;
+        gap: 66px;
+        border-top: $border;
+        padding-right: 19px;
+       
+    }
+
+    &__slider-title {
+        font-size: 31px;
+        line-height: 42px;
+        margin-top: 31px;
+        margin-bottom: 46px;
+    }
+
+    &__slider-text{
+        max-width: 280px;
+    }
+
+    &__slider-image{
+        z-index: 2;
+    }
+}
